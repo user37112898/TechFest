@@ -1,0 +1,98 @@
+<div>
+  <header class="header" #homeId>
+    <div class="logo row">
+      <div class="col-5">
+        <a href="" target="_blank">
+          <img class="" id="gitLogo" src="../../assets/gitLogo.png" 
+          alt="Git-Logo">
+        </a>
+      </div>
+      <div class="col-7 text-right navigationItems">
+        <ul class="nav-item" (click)="scroll(homeId)">Home</ul>
+        <ul class="nav-item" (click)="scroll(eventId)">Events</ul>
+        <ul class="nav-item" (click)="scroll(contactId)">Contact</ul>
+      </div> 
+    </div>    
+  </header>
+  <div class="MainScreen"#eventId>
+    <h1 id="mainTitle">TechFest 2019</h1>
+    <div id="downArrow" >
+      <i class="fas fa-chevron-down" (click)="scroll(eventId)" ></i>
+    </div>
+    <div #eventId class="Events">
+      <h2 id="eventTitle">Events</h2>
+      <div class="row">
+        <div class="col-4">
+          <div>
+            <a [routerLink]="[ '/compIt']">
+            <i class="fas fa-desktop fa-10x  "></i>
+            <ul router>CE/IT</ul>
+            </a>
+          </div>
+          <div>
+            <i class="fas fa-user-tie fa-10x  "></i>
+            <ul>MBA</ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <i class="fas fa-bolt fa-10x  "></i>
+            <ul>EC/EE</ul>
+          </div>
+          <div>
+            <i class="fas fa-gamepad fa-10x  "></i>
+            <ul>LAN</ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <i class="fas fa-calculator fa-10x  "></i>
+            <ul>MATH</ul>
+          </div>
+          <div>
+            <i class="fas fa-cogs fa-10x  "></i>
+            <ul>WORKSHOPS</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LastPart -->
+    <div class="row" #contactId style="padding:20px">
+      <div class="col-6" id="googleMaps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.0816199633446!2d72.44577331445282!3d23.16722098487996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9d4445ad5a7f6b49!2sGandhinagar+Institute+Of+Technology!5e0!3m2!1sen!2sin!4v1549532294293" width="100%" height="450" frameborder="1" style="border:0px;"></iframe>
+      </div>
+      <div class="col-6" id="details">
+        <div id="gitLogoFooter" style="padding:20px">
+          <img src="../../assets/git_logo_footer.png" alt="Git-Logo">
+        </div>
+        <div>
+          <p>Address:Khatraj - Kalol Road, Moti Bhoyan,<br> Tal. Kalol, Dist. Gandhinagar-382721</p>
+        </div>
+
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-8 text-left" style="padding-left: 40px">
+            <div>
+              <i class="fas fa-phone fa-1x" style="transform:scaleX(-1); padding-left:8px"></i> +91 9904405900 / 01  
+            </div>
+            <div>
+              <i class="fas fa-fax fa-lg" style="padding-right:8px"></i>+91 27642 81862
+            </div>
+            <div>
+              <i class="fas fa-envelope fa-lg" style="padding-right:8px"></i>director@git.org.in
+            </div>
+          </div>
+        </div>
+
+        <div id="social" style="padding-top:30px">
+          <a href="https://www.facebook.com/GITOfficialWebsite/"><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href="https://twitter.com/git_institute/"><i class="fab fa-twitter-square fa-2x"></i></a>
+          <a href="https://www.instagram.com/git_institute/"><i class="fab fa-instagram fa-2x"></i></a>          
+          <a href="https://www.linkedin.com/in/gandhinagar-institute-of-technology-b1989017/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+          <a href="https://www.youtube.com/user/gitorgin"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

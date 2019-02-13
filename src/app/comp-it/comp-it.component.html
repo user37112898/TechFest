@@ -1,0 +1,85 @@
+<div class="ceitScreen" #startId >
+  <div id="login" *ngIf = "auth.user$ | async as user; else login">
+    <pre>
+    {{ user | json }}
+    </pre>
+    <hr>
+    <button class="button" (click)="auth.signOut()">Sign Out</button>
+  </div>
+  <ng-template #login>
+    <button class="button" (click)="auth.googleSignin()">Login with Google</button>
+  </ng-template>
+
+  <div class="centerElement row">
+    <div class="col-5 logo" >
+      <i class="fas fa-desktop fa-10x"></i>
+      <div style="font-size: 110px">CE/IT</div>
+    </div>
+    <div class="col-7 allEvents" style="border-left:3px solid">
+      <ul (click)="scroll(CodeQuest)">Code-Quest</ul>
+      <ul (click)="scroll(CodeStrom)">Code-Strom</ul>
+      <ul (click)="scroll(DaretoCode)">Dare-to-Code</ul>
+      <ul (click)="scroll(Dexter)">Dexter</ul>
+      <ul (click)="scroll(DYD)">DYD</ul>
+      <ul (click)="MastersApp">Master's App</ul>
+      <ul (click)="Webethon">Web-e-thon</ul>
+    </div>
+  </div>
+
+  <div class="eventInfo" #CodeQuest>
+    <h1>Code-Quest</h1>
+    <div class="row">
+      <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+      <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+    </div>
+  </div>
+
+  <div class="eventInfo" #CodeStrom>
+    <h1>Code-Strom</h1>
+    <div class="row">
+      <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+      <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+    </div>
+  </div>
+
+  <div class="eventInfo" #DaretoCode>
+    <h1>Dare-to-Code</h1>
+    <div class="row">
+      <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+      <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+    </div>
+  </div>
+
+  <div class="eventInfo" #Dexter>
+    <h1>Dexter</h1>
+    <div class="row">
+      <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+      <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+    </div>
+  </div>
+
+  <div class="eventInfo" #DYD>
+    <h1>DYD</h1>
+    <div class="row">
+      <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+      <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+    </div>
+  </div>
+
+  <div class="eventInfo" #MastersApp>
+    <h1>Master's App</h1>
+    <div class="row">
+      <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+      <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+    </div>
+  </div>
+
+  <div class="eventInfo" #Webethon>
+    <h1>Web-e-thon</h1>
+    <div class="row">
+      <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+      <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+    </div>
+  </div>
+
+</div>
