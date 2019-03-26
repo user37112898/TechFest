@@ -1,0 +1,85 @@
+<div class="ceitScreen" #startId >
+    <div id="login" *ngIf = "auth.user$ | async as user; else login">
+      <pre>
+      {{ user | json }}
+      </pre>
+      <hr>
+      <button class="button" (click)="auth.signOut()">Sign Out</button>
+    </div>
+    <ng-template #login>
+      <button class="button" (click)="auth.googleSignin()">Login with Google</button>
+    </ng-template>
+  
+    <div class="centerElement row">
+      <div class="col-5 logo" >
+        <i class="fas fa-desktop fa-10x"></i>
+        <div style="font-size: 110px">EC/EE</div>
+      </div>
+      <div class="col-7 allEvents" style="border-left:3px solid">
+        <ul (click)="scroll(Event1)">Event 1</ul>
+        <ul (click)="scroll(Event2)">Event 2</ul>
+        <ul (click)="scroll(Event3)">Event 3</ul>
+        <ul (click)="scroll(Event4)">Event 4</ul>
+        <ul (click)="scroll(Event5)">Event 5</ul>
+        <ul (click)="scroll(Event6)">Event 6</ul>
+        <ul (click)="scroll(Event7)">Event 7</ul>
+      </div>
+    </div>
+  
+    <div class="eventInfo" #Event1>
+      <h1>Event 1</h1>
+      <div class="row">
+        <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+        <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+      </div>
+    </div>
+  
+    <div class="eventInfo" #Event2>
+      <h1>Event 2</h1>
+      <div class="row">
+        <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+        <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+      </div>
+    </div>
+  
+    <div class="eventInfo" #Event3>
+      <h1>Event 3</h1>
+      <div class="row">
+        <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+        <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+      </div>
+    </div>
+  
+    <div class="eventInfo" #Event4>
+      <h1>Event 4</h1>
+      <div class="row">
+        <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+        <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+      </div>
+    </div>
+  
+    <div class="eventInfo" #Event5>
+      <h1>Event 5</h1>
+      <div class="row">
+        <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+        <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+      </div>
+    </div>
+  
+    <div class="eventInfo" #Event6>
+      <h1>Event 6</h1>
+      <div class="row">
+        <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+        <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+      </div>
+    </div>
+  
+    <div class="eventInfo" #Event7>
+      <h1>Event 7</h1>
+      <div class="row">
+        <p class="col-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ea atque harum suscipit officiis nostrum eaque expedita magni voluptates natus exercitationem maxime nam sed in adipisci sapiente dicta vero vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis earum cum officia voluptas cumque natus esse error voluptatem, debitis, quae corrupti ullam eligendi repudiandae animi expedita ea quod quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt autem tempora, culpa fugit tenetur eos, quisquam atque voluptate similique, deleniti dolorem molestiae? Optio dolorum facilis explicabo dolore nam corporis numquam.</p>
+        <p class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolor iusto ratione mollitia itaque cupiditate rerum aperiam veniam. Consequuntur rem tempora maxime, quidem accusamus et numquam delectus quo molestiae soluta.</p>
+      </div>
+    </div>
+  
+  </div>

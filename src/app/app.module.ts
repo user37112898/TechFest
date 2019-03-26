@@ -11,7 +11,11 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from 'src/environments/environment.prod';
-
+import { EcEeComponent } from './ec-ee/ec-ee.component';
+import { MathComponent } from './math/math.component';
+import { MbaComponent } from './mba/mba.component';
+import { LanComponent } from './lan/lan.component';
+import { WorkshopsComponent } from './workshops/workshops.component';
 const config = {
   apiKey: "AIzaSyCXFgLAKpY2f4-RRHBLN4IMIWaqlO7KBWQ",
   authDomain: "techxtreme-e1387.firebaseapp.com",
@@ -25,7 +29,12 @@ const config = {
   declarations: [
     AppComponent,
     IndexComponent,
-    CompItComponent
+    CompItComponent,
+    EcEeComponent,
+    MathComponent,
+    MbaComponent,
+    LanComponent,
+    WorkshopsComponent,
   ],
   imports: [
     BrowserModule,

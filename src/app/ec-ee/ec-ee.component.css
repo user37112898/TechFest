@@ -1,0 +1,47 @@
+.ceitScreen{
+    color: rgb(25, 195, 225);
+    background-image: radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9));
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.centerElement{
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 10%;
+}
+
+#login{
+    z-index: 1;
+    background-color: aliceblue;
+}
+
+.logo{
+    vertical-align: middle;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.allEvents{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 650;
+    font-family: cursive;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.eventInfo{
+    padding: 30px;
+    background-color: rgb(235, 235, 235);
+    margin: 40px 20px;
+    color: rgb(16, 156, 180);
+}
+
+.eventInfo p{
+    font-family: cursive;
+}
+
+#temp{
+    align-self: center;
+}
